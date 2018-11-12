@@ -17,12 +17,13 @@ h2 {
 
 header {
   display: flex;
+  justify-content: space-between;
   position: fixed;
+  background-color: black;
   z-index: 1;
   align-items: center;
   overflow: hidden;
-  width: 100%
-  background-color: black;
+  width: 100%;
   border-bottom: 1px solid seashell;
   height: 69px;
   top: 0;
@@ -50,9 +51,21 @@ height: 50px;
 
 .main-image .image-content {
   background-image: url("../images/mission.jpg");
+  background-color: black;
   display: flex;
   z-index: 2;
   align-items: center;
   margin-top: 70px;
   width: 1200px;
   height: 700px;
+  flex-flow: column wrap;
+
+  /* Tea of the Month */
+
+.type {
+height: 200px;
+width: 300px;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+  }
