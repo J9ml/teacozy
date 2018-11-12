@@ -7,6 +7,8 @@ body {
   color: seashell;
   opacity: 0.9;
   background-color: black;
+  justify-content: center;
+
 }
 
 }
@@ -17,27 +19,18 @@ h2 {
 
 header {
   display: flex;
+  flex-flow: column wrap;
   justify-content: space-between;
   position: fixed;
   background-color: black;
   z-index: 1;
-  align-items: center;
   overflow: hidden;
   width: 100%;
   border-bottom: 1px solid seashell;
   height: 69px;
   top: 0;
-  padding-right: 10px;
-}
-nav span {
-display: inline block;
-flex-grow: 1;
-overflow: scroll;
-
-
-}
-a {
-  color: seashell;
+  left: 0;
+  padding-left: 10px;
 }
 
 .logo {
@@ -45,27 +38,86 @@ display: flex;
 flex-grow: 1;
 padding-left: 10px;
 height: 50px;
+padding: 10 10 9 10;
 }
 
-/* Our Mission */
+nav span {
+display: inline-flex;
+flex-flow: column wrap;
+flex: 1 1;
+height: 22px;
+align-content: flex-end;
+margin: 10px;
+justify-content: space-around;
+flex-grow: 1;
+overflow: scroll;
+}
 
-.main-image .image-content {
+a {
+  color: seashell;
+}
+
+.p {
+margin-top: 10px;
+}
+
+/* our mission */
+
+.mission {
   background-image: url("../images/mission.jpg");
-  background-color: black;
+  left: 0;
   display: flex;
+  flex: 1 1;
   z-index: 2;
+  justify-content: center;
   align-items: center;
   margin-top: 70px;
   width: 1200px;
   height: 700px;
   flex-flow: column wrap;
+}
 
-  /* Tea of the Month */
+#mission-content {
+  display: flex;
+  flex-flow: column wrap;
+  align-items:center;
+}
 
-.type {
+.mission-content {
+    align-items: center;
+    background-color: black;
+  }
+
+/* tea of the month */
+
+.types {
+  display: flex;
 height: 200px;
 width: 300px;
 display: flex;
 flex-wrap: wrap;
+flex: 1 1;
 justify-content: space-around;
+  }
+
+  /* locations */
+
+  .locations {
+    background-image: url("..images/locations.jpg") alt="Tea cup">
+    z-index: 4;
+    display: inline-flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    justify-content: center;
+    padding: 10 10 10 10;
+    width: 100px;
+    flex: 1 1;
+  }
+  #downtown #bayside #oakdale {
+    z-index: 3;
+    background-color: black;
+    width: 1200px;
+    height: 500px;
+
+
   }
