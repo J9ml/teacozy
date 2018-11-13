@@ -27,7 +27,6 @@ header {
   background-color: black;
   align-items: center;
   z-index: 1;
-  overflow: hidden;
   width: 100%;
   border-bottom: 1px solid seashell;
   height: 69px;
@@ -47,19 +46,16 @@ padding: 10 10 9 10;
 
 nav span {
 height: 22px;
-display: flex;
+display: inline-flex;
 flex-flow: column wrap;
 flex: 1 1;
 align-content: flex-end;
 align-items: center;
 justify-content: space-around;
-padding-right: 10px;
+padding-right: 20px;
 }
 
-nav {
-  display: flex;
-  flex: 2 1;
-}
+
 
 a {
   color: seashell;
@@ -113,57 +109,63 @@ justify-content: center;
   display: flex;
   flex: 1 1;
   flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
 }
 
-.berry .rum .donut .myrtle .bedford {
-display: flex;
-flex: 1 1;
-flex-flow: row wrap;
-}
-
-p .berry .rum .donut .myrtle .bedford {
+.berry .rum .donut .myrtle .bedford p {
   margin-top: 10px;
 }
 
-.berry .rum .donut {
-  padding-right: 50px;
+
+.berry img, .rum img, .myrtle img {
+  margin-right: 50px;
 }
 
   /* locations */
 
-  .locations h2 {
-    text-align: center;
+  .locations  {
+    background-image: url("../images/locations.jpg");
+    height: 500px;
+    width: 1200px;
+    display: flex;
+    flex: 1 1;
+    flex-flow: column wrap;
+    z-index: 9;
   }
 
-.locations-image img {
-  height: 500px;
-  width: 1200px;
+.locations h2 {
+  display: flex;
+  flex: 1 1;
+  flex-flow: row wrap;
+  justify-content: center;
+  z-index: 8;
+  padding-top: 30px;
 }
 
-.locations-text {
-    background-image: url("../images/locations.jpg");
-    display: inline-flex;
-    height: 500px;
-    width: 1200px;
+.locations-content {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1;
+    justify-content: center;
+    z-index: 10;
   }
 
-
-  #downtown #bayside #oakdale {
+  #location1 #location2 #location3 {
     background-color: black;
-    width: 1200px;
-    height: 500px;
-    padding: 10 10 10 10;
-    width: 100px;
-    display: inline-flex;
+    opacity: 1;
+    width: 300px;
+    height: 100%;
+    margin-top: 15px;
+    padding: 10px 10px;
+    display: flex;
     flex: 1 1;
     flex-flow: row wrap;
-    justify-content: space-around;
-
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    z-index: 10;
   }
 
-  #downtown #bayside {
+  #location1 #location2 {
    margin-right: 40px;
   }
 
