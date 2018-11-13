@@ -7,7 +7,7 @@ body {
   color: seashell;
   opacity: 0.9;
   background-color: black;
-  justify-content: center;
+  margin: auto;
 }
 
 
@@ -61,39 +61,42 @@ a {
   color: seashell;
 }
 
-.p {
-margin-top: 10px;
-}
 
 /* our mission */
 
 .mission {
   background-image: url("../images/mission.jpg");
-  left: 0;
-  margin-top: 70px;
+  padding-top: 70px;
   width: 1200px;
   height: 700px;
+  margin: auto;
   display: flex;
   z-index: 2;
-  justify-content: space-around;
   align-items: center;
   flex: 1 1;
-  flex-flow: column wrap;
+  flex: row wrap;
   }
 
 #mission-content {
   width: 1200px;
   background-color: black;
   display: flex;
+  flex: 1 1;
   flex-flow: column wrap;
   align-items: center;
-  justify-content: center;
+  margin: auto;
+}
+
+img.mission-image {
+  width: 1200px;
+  height: 700px;
+
 }
 
 /* tea of the month */
 
 .types1 {
-width: 1000px;
+width: 300px;
 display: inline-flex;
 }
 
@@ -105,14 +108,15 @@ display: inline-flex;
 img.berry img.rum img.donut img.myrtle img.bedford {
   height: 200px;
   width: 300px;
-  display: inline-flex;
+  display: flex;
   flex: 1 1;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
 }
+
 .berry .rum .donut .myrtle .bedford {
-display: inline-flex;
+display: flex;
 flex: 1 1;
 flex-flow: row wrap;
 justify-content: center;
@@ -139,6 +143,7 @@ img.locations-image {
 
 .locations-text {
     background-image: url("../images/locations.jpg");
+    display: inline-flex;
   }
 
 
@@ -148,9 +153,10 @@ img.locations-image {
     height: 500px;
     padding: 10 10 10 10;
     width: 100px;
+    display: flex;
     flex: 1 1;
+    flex-flow: row wrap;
     justify-content: space-around;
-    display: inline-flex;
 
   }
 
