@@ -8,21 +8,24 @@ body {
   opacity: 0.9;
   background-color: black;
   justify-content: center;
-
 }
 
-}
+
 h2 {
+  text-align: center;
+}
+
+h4 {
+  text-align: center;
 }
 
 /* header */
 
 header {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: space-between;
+  display: inline-flex;
   position: fixed;
   background-color: black;
+  align-items: center;
   z-index: 1;
   overflow: hidden;
   width: 100%;
@@ -30,27 +33,28 @@ header {
   height: 69px;
   top: 0;
   left: 0;
-  padding-left: 10px;
+
 }
 
 .logo {
 display: flex;
-flex-grow: 1;
+flex: 1 1;
 padding-left: 10px;
 height: 50px;
 padding: 10 10 9 10;
+
 }
 
 nav span {
+height: 22px;
 display: inline-flex;
 flex-flow: column wrap;
 flex: 1 1;
-height: 22px;
 align-content: flex-end;
-margin: 10px;
+align-items: center;
 justify-content: space-around;
-flex-grow: 1;
 overflow: scroll;
+padding-right: 10px;
 }
 
 a {
@@ -78,46 +82,71 @@ margin-top: 10px;
 }
 
 #mission-content {
+  width: 1200px;
   display: flex;
   flex-flow: column wrap;
-  align-items:center;
+  align-items: center;
+  background-color: black;
+  justify-content: center;
 }
 
-.mission-content {
-    align-items: center;
-    background-color: black;
-  }
 
 /* tea of the month */
 
 .types {
   display: flex;
-height: 200px;
-width: 300px;
-display: flex;
+height: 100%;
+width: 1000px;
 flex-wrap: wrap;
 flex: 1 1;
 justify-content: space-around;
   }
 
+.berry .rum .donuts .myrtle .bedford {
+  display: flex;
+  height: 200px;
+  width: 300px;
+}
+
   /* locations */
 
-  .locations {
-    background-image: url("..images/locations.jpg") alt="Tea cup">
-    z-index: 4;
-    display: inline-flex;
-    justify-content: space-around;
-    margin: 0 auto;
-    justify-content: center;
-    padding: 10 10 10 10;
-    width: 100px;
-    flex: 1 1;
+  .locations h2 {
+    text-align: center;
   }
+
+img.locations-image {
+  height: 500px;
+  width: 1200px;
+}
+
+.locations-text {
+    background-image: url("../images/locations.jpg");
+    z-index: 4;
+
+  }
+
+
   #downtown #bayside #oakdale {
     z-index: 3;
     background-color: black;
     width: 1200px;
     height: 500px;
+    padding: 10 10 10 10;
+    width: 100px;
+    flex: 1 1;
+    justify-content: space-around;
+    display: inline-flex;
+
 
 
   }
+
+  #downtown #bayside {
+   margin-right: 40px;
+  }
+
+
+#copyright {
+text-align: left;
+margin-left: 20px;
+}
