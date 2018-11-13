@@ -47,13 +47,18 @@ padding: 10 10 9 10;
 
 nav span {
 height: 22px;
-display: inline-flex;
+display: flex;
 flex-flow: column wrap;
 flex: 1 1;
 align-content: flex-end;
 align-items: center;
 justify-content: space-around;
 padding-right: 10px;
+}
+
+nav {
+  display: flex;
+  flex: 2 1;
 }
 
 a {
@@ -97,10 +102,12 @@ img.mission-image {
 .types {
 width: 1000px;
 display: inline-flex;
+flex-wrap: wrap;
+justify-content: center;
 }
 
 
-img.berry img.rum img.donut img.myrtle img.bedford {
+.berry img, .rum img, .donut img, .myrtle img, .bedford img {
   height: 200px;
   width: 300px;
   display: flex;
@@ -114,7 +121,6 @@ img.berry img.rum img.donut img.myrtle img.bedford {
 display: flex;
 flex: 1 1;
 flex-flow: row wrap;
-justify-content: center;
 }
 
 p .berry .rum .donut .myrtle .bedford {
@@ -122,7 +128,7 @@ p .berry .rum .donut .myrtle .bedford {
 }
 
 .berry .rum .donut {
-  margin-right: 50px;
+  padding-right: 50px;
 }
 
   /* locations */
@@ -131,7 +137,7 @@ p .berry .rum .donut .myrtle .bedford {
     text-align: center;
   }
 
-img.locations-image {
+.locations-image img {
   height: 500px;
   width: 1200px;
 }
@@ -150,7 +156,7 @@ img.locations-image {
     height: 500px;
     padding: 10 10 10 10;
     width: 100px;
-    display: flex;
+    display: inline-flex;
     flex: 1 1;
     flex-flow: row wrap;
     justify-content: space-around;
