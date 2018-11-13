@@ -32,30 +32,26 @@ header {
   height: 69px;
   top: 0;
   left: 0;
-
 }
 
 .logo {
-display: flex;
-flex: 1 1;
-padding-left: 10px;
-height: 50px;
-padding: 10 10 9 10;
-
+  display: flex;
+  flex: 1 1;
+  padding-left: 10px;
+  height: 50px;
+  padding: 10 10 9 10;
 }
 
 nav span {
-height: 22px;
-display: inline-flex;
-flex-flow: column wrap;
-flex: 1 1;
-align-content: flex-end;
-align-items: center;
-justify-content: space-around;
-padding-right: 20px;
+  height: 22px;
+  display: inline-flex;
+  flex-flow: column wrap;
+  flex: 1 1;
+  align-content: flex-end;
+  align-items: center;
+  justify-content: space-around;
+  padding-right: 20px;
 }
-
-
 
 a {
   color: seashell;
@@ -85,25 +81,24 @@ a {
   flex-flow: column wrap;
   align-items: center;
   margin: auto;
-}
+  }
 
 #mission-content h4 {
-  margin-top: -15px;
-}
-
+   margin-top: -15px;
+  }
 
 /* tea of the month */
 
 .types {
-width: 1000px;
-display: inline-flex;
-flex-wrap: wrap;
-justify-content: center;
-}
+  width: 1000px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  }
 
 #featured h4 {
   margin-top: -15px;
-}
+  }
 
 .berry img, .rum img, .donut img, .myrtle img, .bedford img {
   height: 200px;
@@ -111,16 +106,15 @@ justify-content: center;
   display: flex;
   flex: 1 1;
   flex-flow: row wrap;
-}
+  }
 
 .berry .rum .donut .myrtle .bedford p {
-  margin-top: 10px;
-}
-
+   margin-top: 10px;
+  }
 
 .berry img, .rum img, .myrtle img {
   margin-right: 50px;
-}
+  }
 
   /* locations */
 
@@ -129,12 +123,11 @@ justify-content: center;
     height: 500px;
     width: 1200px;
     margin: auto;
-
-  }
+   }
 
 .locations h2 {
   padding-top: 70px;
-}
+  }
 
 .locations-content {
     width: 1000px;
@@ -143,24 +136,24 @@ justify-content: center;
     flex-direction: row;
     justify-content: center;
     margin: auto;
-  }
+    }
 
-  .address1, .address2, .address3 {
+.address1, .address2, .address3 {
     background-color: black;
     padding: 15px 15px;
     width: 300px;
     margin-top: 15px;
-}
+   }
 
-  .address1, .address2 {
+.address1, .address2 {
    margin-right: 40px;
-  }
+   }
 
 .footer {
-  height: 200px;
-}
+   height: 200px;
+  }
 
 #copyright {
-text-align: left;
-margin-left: 20px;
-}
+  text-align: left;
+  margin-left: 20px;
+  }
