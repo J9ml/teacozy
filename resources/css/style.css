@@ -53,7 +53,6 @@ flex: 1 1;
 align-content: flex-end;
 align-items: center;
 justify-content: space-around;
-overflow: scroll;
 padding-right: 10px;
 }
 
@@ -95,15 +94,11 @@ img.mission-image {
 
 /* tea of the month */
 
-.types1 {
+.types {
 width: 1000px;
 display: inline-flex;
 }
 
-.types2 {
-  width: 650px;
-  display: inline-flex;
-}
 
 img.berry img.rum img.donut img.myrtle img.bedford {
   height: 200px;
@@ -144,6 +139,8 @@ img.locations-image {
 .locations-text {
     background-image: url("../images/locations.jpg");
     display: inline-flex;
+    height: 500px;
+    width: 1200px;
   }
 
 
