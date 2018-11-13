@@ -129,7 +129,9 @@ justify-content: center;
     display: flex;
     flex: 1 1;
     flex-flow: column wrap;
-    z-index: 9;
+    justify-content: center;
+    margin: auto;
+
   }
 
 .locations h2 {
@@ -137,37 +139,39 @@ justify-content: center;
   flex: 1 1;
   flex-flow: row wrap;
   justify-content: center;
-  z-index: 8;
   padding-top: 30px;
 }
 
 .locations-content {
+    width: 1000px;
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: column wrap;
     flex: 1 1;
-    justify-content: center;
-    z-index: 10;
-  }
-
-  #location1 #location2 #location3 {
-    background-color: black;
-    opacity: 1;
-    width: 300px;
-    height: 100%;
-    margin-top: 15px;
-    padding: 10px 10px;
-    display: flex;
-    flex: 1 1;
-    flex-flow: row wrap;
+    margin: auto;
     align-items: center;
-    align-content: center;
-    justify-content: center;
-    z-index: 10;
   }
 
-  #location1 #location2 {
+  .address1 {
+    background-color: black;
+    padding: 10px 10px;
+  }
+
+  .address2 {
+    background-color: black;
+    padding: 10px 10px;
+  }
+
+  .address3 {
+    background-color: black;
+    padding: 10px 10px;
+  }
+
+
+
+  .address1 .address2 {
    margin-right: 40px;
   }
+
 
 
 #copyright {
